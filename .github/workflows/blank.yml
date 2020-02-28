@@ -1,17 +1,8 @@
-name: CI
-
-on: [push]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+build the car:
+script:
+- mkdir build
+- cd build
+- touch car.txt
+- echo "chasis" > car.txt
+- echo "enging" > car.txt
+- echo "wheels" > car.txt
